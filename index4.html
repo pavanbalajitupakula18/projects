@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-game</title>
+    <link rel="stylesheet" href="style4.css">
+ 
+</head>
+<body>
+   
+    <div class="container1">
+     
+      <div class="first" id="screen1">
+        <h1>Quiz Time!</h1>
+        <p>play the quiz and know your knowledge</p>
+        <button id="startbutton">Start Quiz</button>
+      </div>
+
+      <div class="second" id="screen2">
+        <div class="quizheader">
+          <h2 id="question1">Question goes here</h2>
+          <div class="quiznumber">
+            <p>
+              Question <span id="questionnumber">1</span> of <span id="maxquestions">5</span>
+            </p>
+
+            <p>Score: <span id="score">0</span></p>
+          </div>
+        </div>
+
+        <div id="answers" class="answers">
+      <div id="answerbutton"></div>
+        </div>
+
+        <div class="progressbar">
+          <div id="progress" class="progress"></div>
+        </div>
+      </div>
+
+      <div id="resultscreen" class="screen">
+        <h1>Quiz Results</h1>
+        <div class="resultinfo">
+          <p>You scored <span id="finalscore">0</span> out of <span id="maxscore">5</span></p>
+
+          <div id="resultmessage">Good job!</div>
+        </div>
+        <button id="restartbutton">Restart Quiz</button>
+         <a href="./subindex.html"><button >back</button></a>
+        <a href="./superindex.html"><button>home</button></a>
+      </div>
+    </div>
+
+    
+    <script src="script4.js"></script>
+</body>
+</html>
