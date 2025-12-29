@@ -5,52 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-  body{
-   
-
+  /* Base styles for desktop */
+body {
     background-image: url('./quiz-time-orange.jpg');
-    background-size: 100%;
+    background-size: cover;       /* fills screen without stretching */
+    background-position: center;  /* centers image */
+    background-repeat: no-repeat; /* avoids repeating */
     transition: all 3s;
-   
-   }
-   body:hover{
-         background-color: white;
-   }
-   button{
-    height: 40px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;            /* ensures full screen */
+}
+
+body:hover {
+    background-color: white;
+}
+
+button {
+    height: 50px;
     width: 200px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: #fff;
+    color: #000;
     font-size: 20px;
-    margin-top: 80px;
-    margin-left: 530px;
-    transition: all 2s;
-
-   }
-   button:hover{
-           background-color: rgb(0, 0, 0);
-           color: rgb(255, 255, 255);
-   }
-   @media (max-width: 768px) {
-
-  body {
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-
-  button {
-    width: 70%;
-    height: 45px;
-    font-size: 18px;
-    margin: 60px auto;  
+    margin: 80px auto 0 auto;
     display: block;
-  }
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    body {
+        background-size: cover; 
+        background-position: center;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    button {
+        width: 80%;
+        height: 50px;
+        font-size: 18px;
+        margin: 60px auto 0 auto;
+    }
+}
+
 
    
     </style>
