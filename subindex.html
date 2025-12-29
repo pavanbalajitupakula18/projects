@@ -5,37 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            align-items: center;
-            margin-top: 100px;
-            margin-left: 400px;
-            background-image: url('./OIP.jpg');
-            /* background-repeat: no-repeat;
-            background-position: center; */
-            /* background-size: 100%; */
-        }
-   button{
-      height: 50px;
-      width: 400px;
-      text-align: center;
-      color: rgb(255, 249, 249);
-      background-color:black;
-   border-radius: 20px;
-   transition: all ;
-   }
-   button:hover{
+      /* Base styles */
+body {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    min-height: 100vh;       /* full viewport height */
+    margin: 0;
+    background-image: url('./OIP.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Button styling */
+button {
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    color: rgb(255, 249, 249);
+    background-color: black;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
     background-color: white;
     color: black;
-   }
-   h1{
-    align-items: center;
+}
+
+/* H1 styling */
+h1 {
     color: rgb(0, 0, 0);
     background-color: white;
     border-radius: 20px;
-    width: 500px;
+    padding: 15px 30px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-   }
+    text-align: center;
+    max-width: 90%; /* responsive width */
+    box-sizing: border-box;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    button {
+        width: 80%;         /* shrink button for mobile */
+        height: 45px;       
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    h1 {
+        font-size: 20px;    
+        padding: 10px 20px;
+    }
+}
+
     </style>
 </head>
 <body>
